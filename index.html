@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#18283d">
+<meta name="description" content="StudyUp – dein persönlicher Lernplaner für die Schule.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<title>StudyUp</title>
+<style>
+:root{color-scheme:light;--navy:#18283d;--ink:#203047;--muted:#718096;--line:#e5eaf0;--bg:#f4f6f9;--white:#fff;--blue:#5879ad;--green:#248565;--gold:#b98236;--shadow:0 8px 28px #17283d0d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}.app{max-width:760px;margin:auto;min-height:100vh;padding-bottom:86px}.hero{background:var(--navy);color:white;padding:24px 20px 22px;border-radius:0 0 24px 24px}.brand{display:flex;align-items:center;gap:11px}.logo{width:42px;height:42px;border-radius:13px;background:#304761;display:grid;place-items:center;font-size:23px}.brand small{display:block;color:#b9c9dc;font-size:10px;letter-spacing:1.3px}.brand strong{font-size:21px}.tag{margin-left:auto;border:1px solid #58705f;background:#27473e;color:#b9f0d2;padding:5px 9px;border-radius:30px;font-size:11px}.hero h1{font-size:25px;line-height:1.2;margin:23px 0 5px}.hero p{margin:0;color:#c7d4e3;font-size:13px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:19px}.stat{background:#293d55;border-radius:13px;padding:11px}.stat b{display:block;font-size:22px}.stat span{font-size:11px;color:#d1dce8}.main{padding:18px 15px}.tabs{position:fixed;z-index:5;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(12px);border-top:1px solid var(--line);display:flex;justify-content:center;padding:8px max(10px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom));}.tabs-inner{width:min(760px,100%);display:grid;grid-template-columns:repeat(4,1fr);gap:5px}.tab{border:0;background:transparent;color:var(--muted);border-radius:12px;padding:8px 3px;font-size:11px}.tab .ico{display:block;font-size:19px}.tab.active{background:#edf1f7;color:#355783;font-weight:700}.card{background:var(--white);border:1px solid var(--line);border-radius:17px;padding:15px;margin-bottom:13px;box-shadow:var(--shadow)}h2{font-size:20px;margin:0 0 5px}h3{font-size:15px;margin:0 0 10px}.muted{color:var(--muted);font-size:13px}.row{display:flex;align-items:center;gap:10px}.between{justify-content:space-between}.pill{font-size:11px;padding:4px 8px;border-radius:20px;background:#f0f3f7;color:#53657a}.focus{background:#fff4e4;color:#94621f}.progress{height:8px;background:#e9edf2;border-radius:20px;overflow:hidden}.progress i{display:block;height:100%;background:var(--green);border-radius:20px}.task{display:flex;align-items:flex-start;gap:10px;padding:11px 0;border-bottom:1px solid #eef1f4}.task:last-child{border:0}.task input{width:19px;height:19px;accent-color:var(--green);margin-top:2px}.task label{flex:1}.task small{display:block;color:var(--muted);font-size:11px}.done{text-decoration:line-through;color:#8793a2}.btn{border:0;border-radius:12px;background:var(--navy);color:white;padding:11px 14px;font-weight:650}.btn:disabled{opacity:.4;cursor:not-allowed}.btn.secondary{background:#edf1f6;color:#344b68}.btn.full{width:100%}.field{width:100%;border:1px solid var(--line);border-radius:11px;padding:11px;background:white;color:var(--ink);margin:5px 0 10px}.subject-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.subject{border:1px solid var(--line);border-radius:12px;padding:12px;background:white;text-align:left;color:var(--ink)}.subject.selected{border:2px solid var(--blue);background:#f2f5fa}.subject small{display:block;color:var(--muted);margin-top:3px}.lesson{background:#f3f5f8;border-radius:13px;padding:13px;margin:12px 0;white-space:pre-line}.option{display:block;width:100%;text-align:left;border:1px solid var(--line);border-radius:11px;padding:10px;background:white;margin:7px 0}.option.selected{border-color:var(--blue);background:#f1f5fb}.feedback{padding:10px;border-radius:10px;background:#edf6f1;color:#236b4f;margin-top:9px;font-size:13px}.feedback.bad{background:#fff3ed;color:#995331}.week{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}.week button{border:1px solid var(--line);background:white;border-radius:10px;padding:8px 11px}.week button.active{background:var(--navy);color:white}.small-btn{border:0;background:transparent;color:#7b8795;padding:4px 8px}.footer{background:var(--navy);color:white;border-radius:15px;padding:15px;font-size:12px}.empty{padding:20px;text-align:center;color:var(--muted)}@media(min-width:600px){.hero{margin-top:18px;border-radius:24px}.main{padding:22px 0}.app{padding-left:18px;padding-right:18px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="hero">
+ <div class="brand"><div class="logo">🎓</div><div><strong>StudyUp</strong><small>YOUR PERSONAL LEARNING SPACE</small></div><span class="tag">GYMNASIUM</span></div>
+ <h1>Dein Fortschritt beginnt heute.</h1><p>Kleine Schritte. Bessere Noten. Mehr Sicherheit.</p>
+ <div class="stats"><div class="stat"><b id="streak">0 🔥</b><span>Tage Streak</span></div><div class="stat"><b id="weekly">0%</b><span>Wochenfortschritt</span></div><div class="stat"><b>−0,5</b><span>Notenziel</span></div></div>
+</header>
+<main class="main" id="view"></main>
+<nav class="tabs"><div class="tabs-inner">
+ <button class="tab active" data-tab="home"><span class="ico">⌂</span>Start</button>
+ <button class="tab" data-tab="plan"><span class="ico">▦</span>Plan</button>
+ <button class="tab" data-tab="learn"><span class="ico">▤</span>Lernen</button>
+ <button class="tab" data-tab="grades"><span class="ico">▥</span>Noten</button>
+</div></nav>
+</div>
+<script>
+const subjects=["Mathe","Englisch","Deutsch","Biologie","Geschichte","Erdkunde","Kunst","Informatik"];
+const focus=["Mathe","Englisch","Deutsch"];
+const lessons={
+"Mathe":{topic:"Terme und Gleichungen",text:"Eine Gleichung besteht aus zwei gleich großen Seiten. Ziel ist, die Variable allein zu stellen. Was du auf einer Seite machst, musst du auch auf der anderen Seite machen.",example:"3x + 5 = 20\\n3x = 15\\nx = 5",q:"Wie groß ist x bei 2x + 6 = 16?",opts:["4","5","6"],correct:"5",tip:"Ziehe zuerst 6 ab und teile anschließend durch 2."},
+"Englisch":{topic:"Simple Past",text:"Das Simple Past verwendest du für abgeschlossene Handlungen in der Vergangenheit. Regelmäßige Verben erhalten meist -ed. Unregelmäßige Verben haben eigene Formen.",example:"I played football yesterday.\\nShe went to school.",q:"Yesterday, I ... to school.",opts:["go","went","gone"],correct:"went",tip:"Go – went – gone."},
+"Deutsch":{topic:"Satzglieder erkennen",text:"Satzglieder sind Bestandteile eines Satzes. Mit der Umstellprobe kannst du sie erkennen. Wichtige Satzglieder sind Subjekt, Prädikat und Objekte.",example:"Die Schülerin liest ein Buch.\\nWer liest? Die Schülerin (Subjekt).",q:"Was ist das Subjekt in: Die Schülerin liest ein Buch?",opts:["Die Schülerin","liest","ein Buch"],correct:"Die Schülerin",tip:"Frage: Wer oder was liest ein Buch?"},
+"Biologie":{topic:"Die Zelle",text:"Die Zelle ist die kleinste lebende Einheit. Der Zellkern enthält die Erbinformation. Die Zellmembran grenzt die Zelle ab.",example:"Zellkern = Erbinformation\\nZellmembran = Abgrenzung",q:"Wo liegt die Erbinformation?",opts:["Zellkern","Zellmembran","Zellwand"],correct:"Zellkern",tip:"Der Zellkern enthält die DNA."},
+"Geschichte":{topic:"Historische Quellen",text:"Historische Quellen liefern Informationen über die Vergangenheit, zum Beispiel Briefe, Bilder, Urkunden und Gegenstände. Man untersucht Urheber, Zeit und Absicht.",example:"Quelle: Brief aus dem Jahr 1914.\\nWer schrieb ihn? An wen? Warum?",q:"Was ist eine historische Quelle?",opts:["Ein erfundener Roman","Ein Brief aus der Vergangenheit","Ein heutiger Stundenplan"],correct:"Ein Brief aus der Vergangenheit",tip:"Quellen geben Einblick in die Vergangenheit."},
+"Erdkunde":{topic:"Klimazonen",text:"Klimazonen unterscheiden sich unter anderem durch Temperatur und Niederschlag. Die Lage zum Äquator beeinflusst die Sonneneinstrahlung.",example:"Äquator: meist warm\\nPolargebiete: sehr kalt",q:"Wo ist die Sonneneinstrahlung im Jahresmittel besonders stark?",opts:["Am Äquator","Am Nordpol","Am Südpol"],correct:"Am Äquator",tip:"Dort treffen Sonnenstrahlen vergleichsweise steil auf."},
+"Kunst":{topic:"Farbenlehre",text:"Im Farbkreis liegen Primärfarben und Mischfarben. Komplementärfarben liegen sich im Farbkreis gegenüber.",example:"Rot und Grün sind Komplementärfarben.",q:"Was sind Komplementärfarben?",opts:["Ähnliche Farben","Gegenüberliegende Farben im Farbkreis","Nur Schwarz und Weiß"],correct:"Gegenüberliegende Farben im Farbkreis",tip:"Sie liegen sich im Farbkreis gegenüber."},
+"Informatik":{topic:"Algorithmen",text:"Ein Algorithmus ist eine eindeutige Schritt-für-Schritt-Anleitung zur Lösung eines Problems. Die Schritte müssen nachvollziehbar und sinnvoll geordnet sein.",example:"1. Zahl eingeben\\n2. Mit 2 multiplizieren\\n3. Ergebnis ausgeben",q:"Was beschreibt einen Algorithmus?",opts:["Eine zufällige Handlung","Eine Schritt-für-Schritt-Anleitung","Ein Computerbildschirm"],correct:"Eine Schritt-für-Schritt-Anleitung",tip:"Ein Algorithmus ist eine geordnete Folge von Schritten."}
+};
+const defaultTasks=[["Schulstoff von heute wiederholen","Allgemein","10 Min."],["Eine schwierige Aufgabe lösen","Mathe","5 Min."],["Vokabeln wiederholen","Englisch","5 Min."],["Deutsch: Grammatik oder Textverständnis","Deutsch","5 Min."],["Hausaufgaben und Tasche vorbereiten","Allgemein","5 Min."]];
+const today=()=>new Date().toISOString().slice(0,10);
+const key="studyup-data-v1";
+let data=JSON.parse(localStorage.getItem(key)||"{}");
+data.tasks ||= {}; data.homework ||= []; data.grades ||= {}; data.streak ||= 0; data.lastDone ||= ""; data.best ||= 0;
+let tab="home", selectedDay="Montag", selectedSubject="Mathe", answer="", feedback="", quizIndex=0;
+function save(){localStorage.setItem(key,JSON.stringify(data));}
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function dayKey(){return today()}
+function getTasks(){return data.tasks[dayKey()]||defaultTasks.map((x,i)=>({id:i,name:x[0],subject:x[1],time:x[2],done:false}));}
+function setTasks(t){data.tasks[dayKey()]=t;save();render();}
+function setTab(t){tab=t;document.querySelectorAll(".tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===t));render();}
+document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>setTab(b.dataset.tab)));
+function headerStats(){
+ document.getElementById("streak").textContent=data.streak+" 🔥";
+ const all=Object.values(data.tasks).flat(), pct=all.length?Math.round(all.filter(x=>x.done).length/all.length*100):0;
+ document.getElementById("weekly").textContent=pct+"%";
+}
+function home(){
+ const tasks=getTasks(), n=tasks.filter(t=>t.done).length;
+ return `<section class="card"><h2>Guten Tag! 👋</h2><p class="muted">Willkommen zurück. Was möchtest du heute schaffen?</p><div class="row between"><b>Tagesfortschritt</b><b>${Math.round(n/tasks.length*100)}%</b></div><div class="progress" style="margin:9px 0 15px"><i style="width:${n/tasks.length*100}%"></i></div>${tasks.map(t=>`<div class="task"><input type="checkbox" data-task="${t.id}" ${t.done?"checked":""}><label class="${t.done?"done":""}">${esc(t.name)}<small>${esc(t.subject)} · ${esc(t.time)}</small></label></div>`).join("")}<button class="btn full" id="finish" ${n!==tasks.length?"disabled":""}>🔥 Tag abschließen</button><p class="muted" id="finishMsg">${data.lastDone===today()?"Tagesziel heute bereits abgeschlossen.":n===tasks.length?"Alle Aufgaben geschafft! Schließe deinen Tag ab.":"Hake alle fünf Aufgaben ab, um den Tag abzuschließen."}</p></section>
+ <section class="card"><h3>Deine Fokusfächer</h3><div class="row">${focus.map(s=>`<span class="pill focus">${s}</span>`).join("")}</div><p class="muted">Hier investieren wir besonders viel Aufmerksamkeit.</p><button class="btn secondary full" id="goLearn">Zum Lernbereich →</button></section>`;
+}
+function plan(){
+ const mapping={Montag:["Mathe","Deutsch"],Dienstag:["Englisch","Biologie"],Mittwoch:["Mathe","Geschichte"],Donnerstag:["Deutsch","Englisch"],Freitag:["Erdkunde","Informatik"],Samstag:["Offene Aufgaben","Wochenwiederholung"],Sonntag:["Pause","Nächste Woche planen"]};
+ return `<section class="card"><h2>Dein Wochenplan</h2><p class="muted">Wähle einen Tag für deinen Lernfokus.</p><div class="week">${Object.keys(mapping).map(d=>`<button data-day="${d}" class="${selectedDay===d?"active":""}">${d.slice(0,2)}</button>`).join("")}</div><h3>${selectedDay}</h3>${mapping[selectedDay].map(s=>`<div class="task"><span>📘</span><label>${s}</label></div>`).join("")}</section>
+ <section class="card"><h3>Offene Aufgaben hinzufügen</h3><form id="addHomework"><input class="field" id="hwText" required placeholder="z. B. Mathe S. 45 Nr. 3"><select class="field" id="hwSubject">${subjects.map(s=>`<option>${s}</option>`).join("")}</select><button class="btn full">Aufgabe hinzufügen</button></form>${data.homework.length?data.homework.map((h,i)=>`<div class="task"><input type="checkbox" data-hw="${i}" ${h.done?"checked":""}><label class="${h.done?"done":""}">${esc(h.text)}<small>${esc(h.subject)}</small></label><button class="small-btn" data-del="${i}">✕</button></div>`).join(""):"<p class='muted'>Noch keine zusätzlichen Aufgaben.</p>"}</section>`;
+}
+function learn(){
+ const l=lessons[selectedSubject];
+ return `<section class="card"><h2>Lernakademie</h2><p class="muted">Kurze Lerneinheiten mit Erklärungen und Mini-Tests.</p><div class="subject-grid">${subjects.map(s=>`<button class="subject ${s===selectedSubject?"selected":""}" data-sub="${s}">${s}${focus.includes(s)?'<small>★ Fokusfach</small>':""}</button>`).join("")}</div></section>
+ <section class="card"><span class="pill">${selectedSubject}</span><h2 style="margin-top:10px">${l.topic}</h2><p>${l.text}</p><div class="lesson"><b>Beispiel</b><br>${esc(l.example)}</div><h3>Mini-Test</h3><p>${l.q}</p>${l.opts.map(o=>`<button class="option ${answer===o?"selected":""}" data-answer="${esc(o)}">${esc(o)}</button>`).join("")}<button class="btn full" id="checkAnswer" ${!answer?"disabled":""}>Antwort überprüfen</button>${feedback?`<div class="feedback ${feedback.startsWith("Noch")?"bad":""}">${feedback}</div>`:""}<button class="btn secondary full" style="margin-top:9px" id="resetQuiz">Test zurücksetzen</button></section>
+ <section class="card"><h3>Erklärvideos</h3><p class="muted">Finde passende deutschsprachige Lernvideos zum ausgewählten Thema.</p><button class="btn secondary full" id="videos">Lernvideos zu ${l.topic} suchen ↗</button></section>`;
+}
+function grades(){
+ return `<section class="card"><h2>Meine Noten</h2><p class="muted">Trage deine aktuellen Noten ein. Sie bleiben auf diesem Gerät gespeichert.</p><div class="lesson"><span class="muted">Dein Ziel</span><h2 style="color:#248565">2,5–3,0</h2><span class="muted">Ausgangswert: 3,0–3,5 · Zielverbesserung: 0,5</span></div>${subjects.map(s=>`<label><b>${s}</b><input class="field grade" data-grade="${s}" type="number" min="1" max="6" step="0.1" placeholder="Note eintragen" value="${data.grades[s]??""}"></label>`).join("")}<p class="muted">Noten werden lokal gespeichert. Der tatsächliche Durchschnitt hängt auch von der Gewichtung deiner Schule ab.</p></section>`;
+}
+function render(){
+ headerStats();const v=document.getElementById("view");
+ v.innerHTML=tab==="home"?home():tab==="plan"?plan():tab==="learn"?learn():grades();
+ v.querySelectorAll("[data-task]").forEach(el=>el.addEventListener("change",()=>{let t=getTasks();t.find(x=>x.id==el.dataset.task).done=el.checked;setTasks(t)}));
+ const finish=v.querySelector("#finish");if(finish)finish.onclick=()=>{if(data.lastDone!==today()){data.streak=data.lastDone===new Date(Date.now()-86400000).toISOString().slice(0,10)?data.streak+1:1;data.best=Math.max(data.best,data.streak);data.lastDone=today();save();render();}};
+ const go=v.querySelector("#goLearn");if(go)go.onclick=()=>setTab("learn");
+ v.querySelectorAll("[data-day]").forEach(b=>b.onclick=()=>{selectedDay=b.dataset.day;render()});
+ const form=v.querySelector("#addHomework");if(form)form.onsubmit=e=>{e.preventDefault();data.homework.push({text:v.querySelector("#hwText").value,subject:v.querySelector("#hwSubject").value,done:false});save();render()};
+ v.querySelectorAll("[data-hw]").forEach(b=>b.onchange=()=>{data.homework[+b.dataset.hw].done=b.checked;save();render()});
+ v.querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{data.homework.splice(+b.dataset.del,1);save();render()});
+ v.querySelectorAll("[data-sub]").forEach(b=>b.onclick=()=>{selectedSubject=b.dataset.sub;answer="";feedback="";render()});
+ v.querySelectorAll("[data-answer]").forEach(b=>b.onclick=()=>{answer=b.dataset.answer;render()});
+ const check=v.querySelector("#checkAnswer");if(check)check.onclick=()=>{feedback=answer===lessons[selectedSubject].correct?"Richtig! Sehr gut. 🎉": "Noch nicht richtig. Tipp: "+lessons[selectedSubject].tip;render()};
+ const reset=v.querySelector("#resetQuiz");if(reset)reset.onclick=()=>{answer="";feedback="";render()};
+ const videos=v.querySelector("#videos");if(videos)videos.onclick=()=>window.open("https://www.youtube.com/results?search_query="+encodeURIComponent("Studyflix "+lessons[selectedSubject].topic+" Deutsch erklärt"),"_blank","noopener");
+ v.querySelectorAll("[data-grade]").forEach(el=>el.onchange=()=>{data.grades[el.dataset.grade]=el.value;save()});
+}
+render();
+if("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("./sw.js").catch(()=>{});
+</script>
+</body>
+</html>
